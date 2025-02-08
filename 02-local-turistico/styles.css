@@ -82,3 +82,52 @@ p {
 main h2+p {
     margin-bottom: 23px;
 }
+
+main div img {
+    height: 375px;
+    object-fit: cover;
+    margin-top: 44px;
+}
+
+ul {
+    padding-left: 24px;
+    font-weight: bold;
+}
+
+
+ul li::marker {
+    color: #333333;
+}
+
+.divider+p {
+    text-align: center;
+}
+
+footer {
+    color: #333333;
+    text-align: center;
+    padding-bottom: 41px;
+    line-height: 150%;
+}
+
+footer img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.accent-blue {
+    color: #0c51a7;
+}
+
+.accent-purple {
+    color: #591b98;
+}
+
+.accent-pink {
+    color: #e5245e;
+}
+
+.accent-orange {
+    color: #e95e10;
+}
