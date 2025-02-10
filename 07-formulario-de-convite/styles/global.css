@@ -27,8 +27,3 @@
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
 }
-
-img {
-    object-fit: cover;
-    max-width: 100%;
-}

@@ -1,99 +1,177 @@
 form {
     margin-inline: 8.125rem;
-fieldset {
-    border: none;
-    display: grid;
-    gap: 1rem;
-legend {
-display: flex;
-align-items: center;
-gap: .75rem;
- color: var(--text-head);
- font: var(--head-sm);
- margin-bottom: 1.5rem;
-label {
-    display: block;
-}
-} 
-}
-}
-input:not([type="radio"]), textarea {
-appearance: none;
-border: 1px solid var(--input-stroke);
-background-color: var(--input-base);
-border-radius: .5rem;
-height: 3rem;
-width: 100%;
-padding: 1rem;
-display: flex;
-align-items: center;
-gap: .5rem;
-margin-top: .75rem;
-color: var(--text-head);
-font: 400 var(--body-md);
-}
-input:not([type="radio"]):focus-within, textarea:focus-within {
-    outline: 1px solid var(--brand-light);
-}
-input::placeholder, textarea::placeholder {
-    color: var(--input-placeholder);
-    font: 400 var(--body-md);
-}
-#event {
-label {
-    display: block;
-    color: var(--text-body);
-    font: 400 var(--body-sm);
-}
-.grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 1rem;
-& input[type="datetime-local"] 
-{
-    text-transform: uppercase;
-    color: var(--input-placeholder);
-    font: 400 var(--body-md);
-    &::-webkit-calendar-picker-indicator {
-        opacity: 0;
+
+    fieldset {
+        border: none;
+        display: grid;
+        gap: 1rem;
+
+        legend {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            color: var(--text-head);
+            font: var(--head-sm);
+            margin-bottom: 1.5rem;
+
+            label {
+                display: block;
+            }
+        }
     }
 }
-.radio { 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+input:not([type="radio"]),
+textarea {
+    appearance: none;
     border: 1px solid var(--input-stroke);
-    height: 3rem;
-    border-radius: .5rem;
     background-color: var(--input-base);
+    border-radius: .5rem;
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     margin-top: .75rem;
-    .radio-select {
+    color: var(--text-head);
+    font: 400 var(--body-md);
+}
+
+fieldset+fieldset {
+    margin-top: 3rem;
+}
+
+input:not([type="radio"]):focus-within,
+textarea:focus-within {
+    outline: 1px solid var(--brand-light);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--input-placeholder);
+    font: 400 var(--body-md);
+}
+
+#event {
+    label {
+        display: block;
+        color: var(--text-body);
+        font: 400 var(--body-sm);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        & input[type="datetime-local"] {
+            text-transform: uppercase;
+            color: var(--input-placeholder);
+            font: 400 var(--body-md);
+
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+            }
+        }
+
+        .radio {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid var(--input-stroke);
+            height: 3rem;
+            border-radius: .5rem;
+            background-color: var(--input-base);
+            margin-top: .75rem;
+
+            .radio-select {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                gap: .5rem;
+
+                & input,
+                & input:hover,
+                & input:focus {
+                    position: absolute;
+                    appearance: none;
+                    height: 3rem;
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                &:has(:checked) {
+                    border-radius: .25rem;
+                    margin: .25rem;
+                    color: var(--text-head);
+                    background-color: var(--shape-button);
+
+                    & svg path {
+                        stroke: var(--brand-light);
+                    }
+                }
+
+            }
+        }
+    }
+
+    & textarea {
+        overflow: hidden;
+        height: 8.5rem;
+    }
+}
+
+#style {
+    label {
+        font: 400 var(--body-sm);
+        color: var(--text-head);
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        gap: .75rem;
+        margin-block: 1rem 1.75rem;
+    }
+
+    .content-radio {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-    gap: .5rem;
-        & input, & input:hover, & input:focus {
-        position: absolute;
-           appearance: none;
-           height: 3rem;
-           width: 100%;
-           cursor: pointer;
-        }
-        &:has(:checked) {
-            border-radius: .25rem;
-            margin: .25rem;
-            color: var(--text-head);
-            background-color: var(--shape-button);
-            & svg path {
-                stroke: var(--brand-light);
+
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: var(--shape-button);
+
+        & .color-radio {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            position: relative;
+
+            & input,
+            & input:hover,
+            & input:focus {
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
             }
         }
-    
+
+        &:has(:checked) {
+            outline: 2px solid var(--brand-light);
+        }
     }
-}
-}
-& textarea {
-    overflow: hidden;
-    height: 8.5rem;
-}
+
+    .grid {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
 }
