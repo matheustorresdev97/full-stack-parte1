@@ -30,3 +30,73 @@ img {
     margin: 36px 0;
     background-color: #d9d9d9;
 }
+
+h1,
+h2,
+h3 {
+    color: #1b1b1b;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 49px;
+    margin: 8px 0 40px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 2px 0 8px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 20px 0 4px;
+}
+
+.headline {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #e1624f;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    font-size: 16px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    font-style: italic;
+    text-align: center;
+    color: #333333;
+    margin-top: 24px;
+}
+
+
+main h2+p {
+    margin-bottom: 23px;
+}
+
+main div img {
+    height: 375px;
+    object-fit: cover;
+    margin-top: 44px;
+}
+
+ul {
+    padding-left: 24px;
+    font-weight: bold;
+}
+
+ul li::marker {
+    color: #333333;
+}
+
+.divider+p {
+    text-align: center;
+}
