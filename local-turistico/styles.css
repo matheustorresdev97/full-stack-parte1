@@ -100,3 +100,32 @@ ul li::marker {
 .divider+p {
     text-align: center;
 }
+
+footer {
+    color: #333333;
+    text-align: center;
+    padding-bottom: 41px;
+    line-height: 150%;
+}
+
+footer img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.accent-blue {
+    color: #0c51a7;
+}
+
+.accent-purple {
+    color: #591b98;
+}
+
+.accent-pink {
+    color: #e5245e;
+}
+
+.accent-orange {
+    color: #e95e10;
+}
