@@ -1,0 +1,133 @@
+#header {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+    min-height: 750px;
+}
+
+
+#header>img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index:1; 
+}
+
+.intro-img {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+    padding: 20px;
+    color: white;
+
+}
+
+/* 🔧 BLOCO MODIFICADO - logo */
+.logo {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.dev-img {
+    position: relative;
+    width: 96px;
+    height: 96px;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--red);
+}
+
+.icone-dev {
+    position: absolute;
+    bottom: 4px;
+    right: -5px;
+    width: 30px;
+    height: auto;
+}
+
+
+.intro {
+    margin-top: 1rem;
+    max-width: 700px;
+}
+
+.intro span {
+    color: var(--red);
+    font-family: var(--ff-subtitle);
+}
+
+.intro p:nth-child(1) {
+    font-family: var(--ff-subtitle);
+    color: var(--gray-200);
+    position: relative;
+    top: 24px;
+    margin-bottom: 2rem;
+}
+.intro h1 {
+    margin: 2rem;
+    font-family: var(--ff-title);
+    color: var(--gray-100);
+
+}
+
+
+.intro p:nth-child(3) {
+    font-family: var(--ff-title);
+    font-size: var(--fs-text-sm);
+    color: var(--gray-300);
+    margin-bottom: 5rem;
+    max-width: 680px;
+
+}
+
+.icon-geral {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: var(--fs-text-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.icon-vetor {
+    position: relative;
+    top: 94px;
+    display: flex;
+    justify-content: center;
+}
+
+.styleCss{
+   max-width: 500px;
+}
