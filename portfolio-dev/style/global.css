@@ -7,12 +7,15 @@
 
 :root {
 
+    /* cores */
+    /* Principais */
     --red: #E3646E;
     --purple: #BB72E9;
     --blue: #3996DB;
     --green: #82BC4F;
     --yellow: #EABD5F;
 
+    /* Base */
     --gray-100: #E2E4E9;
     --gray-200: #C0C4CE;
     --gray-300: #878EA1;
@@ -21,13 +24,16 @@
     --gray-600: #0D0E11;
 
 
+    /* Font Families */
     --ff-title: 'Asap', sans-serif;
     --ff-subtitle: 'Inconsolata', monospace;
     --ff-text: 'Maven Pro', sans-serif;
 
+    /* Font Weights */
     --fw-bold: 700;
     --fw-regular: 400;
 
+    /* Font Sizes */
     --fs-title-lg: 56px;
     --fs-title-md: 24px;
     --fs-title-sm: 16px;
@@ -36,6 +42,7 @@
     --fs-text-md: 16px;
     --fs-text-sm: 14px;
 
+    /* Line Heights */
     --lh-120: 120%;
     --lh-140: 140%;
 }

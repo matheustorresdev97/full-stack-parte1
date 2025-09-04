@@ -1,0 +1,68 @@
+.projet-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));
+    gap: 24px;
+    padding: 72px 120px 144px 120px;
+
+}
+
+.section-trabalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+
+    span {
+        font-size: var(--ff-subtitle);
+        color: var(--red);
+    }
+
+    p {
+        margin-top: 16px;
+        font-family: var(--ff-subtitle);
+        color: var(--gray-100);
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: var(--fw-bold);
+
+    }
+}
+
+.card {
+    margin: 16px;
+    padding: 32px;
+    background-color: var(--gray-400);
+    border-radius: 10px;
+    border: 0.5px solid transparent;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    border: 0.5px solid var(--gray-100);
+    transform: scale(1.03);
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -12px;
+    object-fit: cover;
+    aspect-ratio: 2/ 1;
+
+}
+
+.card h3 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-title-sm);
+    color: var(--gray-100);
+    margin-top: 20px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-family: var(--ff-text);
+    font-size: var(--fs-text-sm);
+    color: var(--gray-200);
+}
