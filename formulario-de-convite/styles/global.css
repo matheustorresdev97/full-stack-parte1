@@ -58,7 +58,8 @@
 
 body {
   overflow: hidden;
-  font: 400 0.875rem / normal var(--font-family-3);
+  font: 400 0.875rem/normal var(--font-family-3);
   color: var(--text-body);
   background-color: var(--shape-background);
+   
 }
