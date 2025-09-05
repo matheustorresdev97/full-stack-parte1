@@ -58,7 +58,7 @@
   }
 }
 
-.personalize {
+.flex-colors {
   .radio-wrapper {
     width: 100%;
     display: inline-flex;
@@ -68,19 +68,18 @@
     appearance: none;
   }
 
-  .radio-inner{
+  .radio-inner {
     display: grid;
     width: 100%;
     justify-content: center;
-    
   }
 
-  .radio-inner input{
+  .radio-inner input {
     display: inline-flex;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 100%;
-    border: 0.40rem solid #2D3136;
+    border: 0.4rem solid #2d3136;
   }
 
   .radio-inner input#blue {
@@ -116,5 +115,46 @@
   .radio-inner input#cyan {
     background-color: var(--cyan);
   }
+}
 
+.flex-theme {
+  .radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 0.5rem;
+  }
+
+  .radio-inner {
+    display: grid;
+
+    border-radius: 0.5rem;
+    width: 8.3rem;
+    height: 6.43rem;
+    justify-content: center;
+    background-color: #2d3136;
+    text-align: center;
+    position: relative;
+
+    & img {
+      display: grid;
+      justify-content: center;
+      padding: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    & input {
+      position: absolute;
+      border-radius: 0.5rem;
+      width: 8.3rem;
+      height: 6.43rem;
+    }
+  }
+
+  .radio-inner:hover {
+    background-color: var(--shape-hover);
+  }
+
+  .radio-inner:has(input:checked) {
+    background-color: var(--shape-hover);
+  }
 }
