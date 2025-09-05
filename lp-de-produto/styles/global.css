@@ -19,10 +19,10 @@
   --stroke-color: #27272a;
   --text-color-primary: #f4f4f5;
   --text-color-secondary: #a1a1aa;
-  --brand-color-primary: ■#f7b733;
-  --brand-color-secondary: 口#FC4A1A;
+  --brand-color-primary: #f7b733;
+  --brand-color-secondary: #fc4a1a;
 
-  --ff-sans: 'Inter', system-ui, sans-serif;
+  --ff-sans: "Inter", system-ui, sans-serif;
   --fw-base: 400;
   --fw-md: 500;
   --fw-bold: 800;
@@ -78,7 +78,7 @@ a {
   color: inherit;
 }
 
-ul[role='list'] {
+ul[role="list"] {
   list-style: none;
 }
 
