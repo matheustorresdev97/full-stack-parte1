@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.56rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-title);
+  font: var(--bold) 0.875rem/normal var(--ff-base);
+}
+
+.btn-pink {
+  background-color: var(--pink-dark);
+}
+
+.btn-blue {
+  background-color: var(--blue-dark);
+}
+
+.btn-md {
+  width: 100%;
+}
