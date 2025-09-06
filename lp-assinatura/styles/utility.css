@@ -7,7 +7,7 @@
   height: 2.5rem;
   border-radius: 0.5rem;
   color: var(--text-title);
-  font: var(--bold) 0.875rem / normal var(--ff-base);
+  font: var(--bold) 0.875rem/normal var(--ff-base);
   overflow: hidden;
 }
 
@@ -25,4 +25,8 @@
 
 .blue-light{
   color: var(--blue-light);
+}
+
+.bold {
+  font-weight: var(--bold);
 }

@@ -48,6 +48,10 @@ html{
   font: var(--body-md);
 }
 
+html ::-webkit-scrollbar{
+  display: none;
+}
+
 body {
   background-color: var(--shape-background);
   color: var(--text-body);
@@ -72,4 +76,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
