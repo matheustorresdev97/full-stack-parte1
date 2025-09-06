@@ -22,3 +22,7 @@
 .btn-md {
   width: 100%;
 }
+
+.blue-light{
+  color: var(--blue-light);
+}

@@ -82,6 +82,46 @@ section.hero {
       opacity: 0%;
     }
   }
+
+  subtitle {
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75rem;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 50rem;
+    p {
+      text-align: center;
+      font: var(--subtitle);
+      color: var(--text-body);
+      opacity: 0.4;
+    }
+    & img {
+      width: 5rem;
+      scale: 0;
+    }
+    & img:nth-child(1) {
+      bottom: 100%;
+      rotate: 15deg;
+    }
+    & img:nth-child(3) {
+      margin-right: auto;
+      rotate: 95deg;
+    }
+    & img:nth-child(4) {
+      margin-left: auto;
+      rotate: -25deg;
+    }
+
+    &:hover {
+      & img {
+        scale: 1;
+      }
+    }
+  }
 }
 
 @keyframes appearimg {
