@@ -7,7 +7,7 @@
   height: 2.5rem;
   border-radius: 0.5rem;
   color: var(--text-title);
-  font: var(--bold) 0.875rem/normal var(--ff-base);
+  font: var(--bold) 0.875rem / normal var(--ff-base);
   overflow: hidden;
 }
 
@@ -23,10 +23,35 @@
   width: 100%;
 }
 
-.blue-light{
+.btn-lg {
+  width: 14rem;
+  height: 2.5rem;
+}
+
+.blue-light {
   color: var(--blue-light);
 }
 
 .bold {
   font-weight: var(--bold);
+}
+
+.card {
+  padding: 2rem;
+  width: 18rem;
+  height: 26rem;
+  border-radius: 1.5rem;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 5.625rem;
+  height: 1.875rem;
+  background-color: var(--shape-stroke);
+  font: 700 0.625rem/1.25 var(--ff-base);
+  border-radius: 999px;
+  text-transform: uppercase;
 }

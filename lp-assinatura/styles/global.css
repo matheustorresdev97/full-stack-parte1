@@ -46,6 +46,7 @@
 
 html{
   font: var(--body-md);
+  scroll-behavior: smooth;
 }
 
 html ::-webkit-scrollbar{
@@ -55,6 +56,10 @@ html ::-webkit-scrollbar{
 body {
   background-color: var(--shape-background);
   color: var(--text-body);
+}
+
+section + section{
+  margin-bottom: 15rem;
 }
 
 
@@ -70,9 +75,13 @@ h2 {
   font: var(--title-sm);
 }
 
-
 a {
   font: var(--medium) .75rem/normal var(--ff-base);
   text-decoration: none;
   color: inherit;
+}
+
+ul li{
+  list-style: none;
+  
 }

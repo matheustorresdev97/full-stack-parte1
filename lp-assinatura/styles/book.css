@@ -4,6 +4,7 @@ section.book {
   align-items: center;
   text-align: center;
   margin-top: 17.375rem;
+  margin-bottom: 60rem;
   & header {
     position: relative;
 

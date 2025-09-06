@@ -48,11 +48,11 @@ section.hero {
     position: absolute;
     width: 30rem;
     height: 30rem;
-    background-color: var(--pink-dark);
+    background-color: #7d298a;
     border-radius: 50%;
-    margin-left: 1171px;
-    margin-top: 722px;
-    filter: blur(668px);
+    transform: translate(300%, 150%);
+    filter: drop-shadow(0px 0px 300px #7D298A) blur(500px);
+    z-index: -1;
   }
   & .elipse2 {
     content: "";
@@ -82,7 +82,6 @@ section.hero {
       opacity: 0%;
     }
   }
-
   .subtitle {
     position: relative;
     display: flex;
@@ -104,10 +103,10 @@ section.hero {
     }
 
     .first {
-      transition: 0.4s .5s ease;
+      transition: 0.4s  ease;
       opacity: 0.4;
       & span {
-        transition: 0.4s .9s ease;
+        transition: 0.4s  ease;
         color: white;
       }
     }
@@ -132,7 +131,7 @@ section.hero {
 
     & img:nth-child(1) {
       bottom: 100%;
-      transition: 0.4s .5s ease;
+      transition: 0.4s ease;
       transform: scale(0) rotate(15deg);
     }
     & img:nth-child(3) {
@@ -187,3 +186,8 @@ section.hero {
   }
 }
 
+@keyframes appearimg {
+  to {
+    opacity: 100%;
+  }
+}
