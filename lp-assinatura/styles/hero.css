@@ -83,8 +83,7 @@ section.hero {
     }
   }
 
-  subtitle {
-    border: 1px solid;
+  .subtitle {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -93,32 +92,71 @@ section.hero {
     width: 100%;
     margin-inline: auto;
     margin-top: 50rem;
+    transition: opacity 0.4s ease, scale 0.4s ease, color 0.4s ease;
+
     p {
       text-align: center;
       font: var(--subtitle);
       color: var(--text-body);
-      opacity: 0.4;
     }
     & img {
       width: 5rem;
       scale: 0;
     }
+
+    .first,
+    .second,
+    .third {
+      opacity: 0.4;
+      & span {
+        font-weight: bold;
+        color: var(--text-base);
+      }
+    }
+
     & img:nth-child(1) {
       bottom: 100%;
-      rotate: 15deg;
+      transform: rotate(15deg);
     }
     & img:nth-child(3) {
       margin-right: auto;
-      rotate: 95deg;
+      transform: rotate(95deg);
     }
     & img:nth-child(4) {
+      position: absolute;
       margin-left: auto;
-      rotate: -25deg;
+      top: 70%;
+      left: 90%;
+      transform: rotate(-20deg);
     }
 
     &:hover {
-      & img {
-        scale: 1;
+      img:nth-child(1) {
+        animation: show 0.4s ease forwards;
+      }
+      img:nth-child(3) {
+        animation: show 0.4s 0.7s ease forwards;
+      }
+      img:nth-child(4) {
+        animation: show 0.4s 1.5s ease forwards;
+      }
+      span.first {
+        & span {
+          animation: color-grade 0.4s ease forwards;
+        }
+        animation: opacity-text 0.4s ease forwards;
+      }
+      span.second {
+        & span {
+          animation: color-grade 0.4s 0.7s ease forwards;
+        }
+        animation: opacity-text 0.4s 0.7s ease forwards;
+      }
+      span.third {
+        & span {
+          animation: color-grade 0.4s 1.5s ease forwards;
+        }
+        animation: opacity-text 0.4s 1.5s ease forwards;
       }
     }
   }
@@ -127,5 +165,23 @@ section.hero {
 @keyframes appearimg {
   to {
     opacity: 100%;
+  }
+}
+
+@keyframes show {
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes opacity-text {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes color-grade {
+  to {
+    color: var(--blue-light);
   }
 }
