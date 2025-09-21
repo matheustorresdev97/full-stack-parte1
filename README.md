@@ -5,6 +5,8 @@ Nesta etapa, trabalhamos apenas com **HTML e CSS**, focando em estrutura e estil
 
 ---
 
+## 📂 Projetos da Parte 1
+
 ### 🍲 Página de Receita
 Página simples para exibir uma receita culinária.
 
@@ -21,3 +23,20 @@ Página apresentando informações e imagens locais turísticos.
 
 ---
 
+### 🌍 Travelgram
+Página estilo rede social de viagens, aprendendo a usar **Flexbox**.  
+🔗 [Ver detalhes](./travelgram/README.md)  
+
+---
+
+### 📰 Portal de Notícias
+Página estilo portal de notícias, focada no uso de **Grid Layout**.  
+🔗 [Ver detalhes](./portal-de-noticias/README.md)  
+
+---
+
+### 💻 Portfolio Dev
+Página de portfólio de desenvolvedor, combinando **Flexbox + Grid**.  
+🔗 [Ver detalhes](./portfolio-dev/README.md)  
+
+---

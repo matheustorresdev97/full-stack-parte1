@@ -1,4 +1,4 @@
-# 🍲 Página de Receita - Parte 1
+# 🍲 Página de Receita
 
 Projeto da **Parte 1** do curso **Full-Stack**, utilizando apenas **HTML e CSS**.  
 O objetivo é praticar marcação semântica e estilização de uma página simples de receita.
