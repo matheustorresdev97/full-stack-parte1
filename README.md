@@ -52,3 +52,21 @@ Página com formulário para matrícula em curso, utilizando diversos tipos de c
 🔗 [Ver detalhes](./formulario-de-matricula/README.md)  
 
 ---
+
+### 🛒 LP de Produto
+Landing page de produto, focada em aplicar **responsividade** além do conteúdo estudado anteriormente.  
+🔗 [Ver detalhes](./lp-de-produto/README.md)  
+
+---
+
+### 🛼 LP de Patins Animada
+Landing page animada de patins, praticando **animações em CSS**.  
+🔗 [Ver detalhes](./lp-de-patins-animada/README.md)  
+
+---
+
+### 📩 LP de Assinatura
+Landing page de assinatura, unindo **responsividade + animações**.  
+🔗 [Ver detalhes](./lp-de-assinatura/README.md)  
+
+---
