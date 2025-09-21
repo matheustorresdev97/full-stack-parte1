@@ -1,4 +1,4 @@
-# 📰 Portal de Notícias - Parte 1
+# 📰 Portal de Notícias
 
 Projeto da **Parte 1** do curso **Full-Stack**, utilizando apenas **HTML e CSS**.  
 O objetivo é praticar o uso de **Grid Layout** na criação de um portal de notícias.

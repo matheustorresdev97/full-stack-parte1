@@ -1,4 +1,4 @@
-# 🌍 Travelgram - Parte 1 
+# 🌍 Travelgram
 
 Projeto da **Parte 1** do curso **Full-Stack**, utilizando apenas **HTML e CSS**.  
 O objetivo é praticar o uso de **Flexbox** na construção de uma página estilo rede social de viagens.

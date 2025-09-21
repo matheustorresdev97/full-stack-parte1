@@ -1,4 +1,4 @@
-# 💻 Portfolio Dev - Parte 1
+# 💻 Portfolio Dev
 
 Projeto da **Parte 1** do curso **Full-Stack**, utilizando apenas **HTML e CSS**.  
 O objetivo é praticar a combinação de **Flexbox + Grid Layout** na construção de um portfólio para desenvolvedor.

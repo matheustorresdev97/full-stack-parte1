@@ -40,3 +40,15 @@ Página de portfólio de desenvolvedor, combinando **Flexbox + Grid**.
 🔗 [Ver detalhes](./portfolio-dev/README.md)  
 
 ---
+
+### 📝 Formulário de Convite
+Página com formulário para convite de evento, praticando campos de formulário em HTML e estilização com CSS.  
+🔗 [Ver detalhes](./formulario-de-convite/README.md)  
+
+---
+
+### 🎓 Formulário de Matrícula
+Página com formulário para matrícula em curso, utilizando diversos tipos de campos e validação simples com HTML5.  
+🔗 [Ver detalhes](./formulario-de-matricula/README.md)  
+
+---
